@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import Cookies from 'js-cookie'
 import axios from 'axios';
-
+import Loading from '../components/Loading.jsx';
 const useGetAllUsers = () => {
   const [allUsers , setAllUsers] = useState([]);
   const [ loading , setLoading] = useState(false)
