@@ -54,6 +54,8 @@ function App() {
           path="/signup"
           element={authUser ? <Navigate to="/" /> : <Signup />}
         />
+         {/* Catch-All Route: Redirect to login for unknown routes */}
+         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
       <Toaster />
     </>
